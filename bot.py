@@ -5,7 +5,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 # =============================================
 # INSÈRE TON TOKEN ICI
-TOKEN = "INSERE_TON_TOKEN_ICI"
+TOKEN = os.environ.get("8947406741:AAHX27qzBEVDoTfxkz68jbyW4TAifhPhY1E")
 # =============================================
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
