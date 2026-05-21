@@ -3,6 +3,12 @@ import logging
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
+TOKEN = os.environ.get("TOKEN")
+if not TOKEN:
+    raise ValueError("TOKEN manquant dans les variables d'environnement")
+from telegram import Update, ReplyKeyboardMarkup
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+
 # =============================================
 # INSÈRE TON TOKEN ICI
 TOKEN = os.environ.get("8947406741:AAHX27qzBEVDoTfxkz68jbyW4TAifhPhY1E")
